@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+:root {
+    --accent: #ff41c6;
+    --font: 'Source Sans Pro', sans-serif;
+    --background: ;
+    --debug: none; /* 2px red dashed */
+    --color: white;
+    --section-bg: #000000bd;
+}
+body, html {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    font-family: var(--font);
+    background-image: var(--background);
+    background-size: cover;
+    color: var(--color);
+    background-attachment: fixed;
+}
+#hero {
+    text-align: center;
+    padding: 4rem;
+    border: var(--debug)
+}
+.section {
+    background-color: var(--section-bg);
+    backdrop-filter: blur(100px);
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.section p {
+    font-size: 15pt;
+    max-width: 70%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+.text-center {
+    text-align: center;
+}
+.accent {
+    color: var(--accent);
+}
+.section .pfp {
+    width: 10rem;
+    border-radius: 30px;
+    background: linear-gradient(126deg, rgba(255,0,0,0.783333401720063) 0%, rgba(255,183,63,0.7805322812718838) 33%, rgba(255,254,0,0.7805322812718838) 33%, rgba(15,235,27,0.8225490879945728) 66%, rgba(71,255,251,0.8225490879945728) 66%, rgba(34,8,174,0.8169468470982143) 100%);
+    filter: saturate(0%);
+    transition: 250ms;
+}
+.section .pfp:hover {
+    filter: saturate(40%);
+    border-radius: 80px;
+}
+.section a {
+    color: var(--color);
+    text-decoration-color: var(--accent);
+    transition: 100ms;
+}
+.section a:hover {
+    color: var(--accent);
+}

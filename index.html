@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me - Agentseed</title>
+    <script src="https://kit.fontawesome.com/3dd1a4167f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://agentseed.org/changeImage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/multiple.js/0.0.1/multiple.min.js" integrity="sha512-h7sEAeLJrgSKuLDecT6NeHSUlbSwpS30IqGu21caM/sa//cWhp5J5D+MOZ0C5QM4GbJlZeEY1ZXXGVtI5m1arg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multiple.js/0.0.1/multiple.min.css" integrity="sha512-QgtB2cND5uNyhSNibXfozoUgX66ecjOsM/3gT2I4P3AK2Yo+x5dCiGtJW0KedxhL3W6s5N9qqP16Q+OT9zVWHA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/css-naked.js"></script>
+</head>
+<body onload="changeBackground()">
+    <div id="header">
+        <ul>
+            <li id="first"><a href="https://agentseed.org" class="no-underline"><span id="logo" class="accent">AGENTSEED</span></a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="https://github.com/agent-seed">GitHub</a></li>
+            <li><a href="/">Website</a></li>
+            <li><a href="/aboutme">About</a></li>
+        </ul> 
+    </div>
+    <div id="hero">
+        <h1 id="title">Hello, I'm <span class="accent" id="name">Agentseed</span></h1>
+    </div>
+    <div class="section">
+        <h1>Projects</h1>
+        <div class="card-parent">
+            <a href="https://agentseed.org/olygeek"><div class="card"><h3 class="card-title">Olygeek Website</h3><p>I rebuilt my local computer repair store's website</p></div></a>
+            <a href="https://agentseed.org/spotify"><div class="card"><h3 class="card-title">Spotify now-playing</h3><p>A simple page that shows your currenly playing song on spotify</p></div></a>
+            <a href="https://agentseed.org/olygeek"><div class="card"><h3 class="card-title">Olygeek Website</h3><p>I rebuilt my local computer repair store's website</p></div></a>
+            <a href="https://agentseed.org/olygeek"><div class="card"><h3 class="card-title">Olygeek Website</h3><p>I rebuilt my local computer repair store's website</p></div></a>
+            <a href="https://agentseed.org/olygeek"><div class="card"><h3 class="card-title">Olygeek Website</h3><p>I rebuilt my local computer repair store's website</p></div></a>
+            <a href="https://agentseed.org/olygeek"><div class="card"><h3 class="card-title">Olygeek Website</h3><p>I rebuilt my local computer repair store's website</p></div></a>
+
+        </div>
+    </div>
+    <div class="section">
+        <h1>About me</h1>
+        <a href="https://agentseed.org/me"><img src="/imgs/me.png" alt="Me!" class="pfp"></a>
+        <p>Hello, I'm Agentseed. I'm a frontend dev, I specialize in websites. I also play and produce music. My grandpa taught me to code C++ when I was 11, for a couple years my only interacion with programming was to make simple arduino projects, my first year of highschool I first learned to write HTML (that first site is archived <a href="TODO: ADD THE LINK">here</a>). I've been progressing ever since, you can check on my current projects on my <a href="https://dev.agentseed.org">dev server.</a></p>
+
+        <p>I'm also an avid gamer, you can add me on steam <a href="https://steamcommunity.com/id/Agentseed">here</a> and on discord <a href="https://discord.com/users/687855724717801502">here</a>. I also take pictures, you can look at those on my <a href="https://unsplash.com/@agentseed">Unsplash</a>.
+        </p>
+    </div>
+    <script>
+        new TypeIt("#name", {
+    strings: ["a developer", "a photographer", "a musician", "a gamer"], 
+    speed: 75,
+    deleteSpeed: 50,
+    loop: true,
+    breakLines: false,
+    cursorChar: '_',
+  }).go();
+  var multiple = new Multiple({
+    selector: '.card',
+    // background: 'linear-gradient(126deg, rgba(255,0,0,0.78) 0%, rgba(255,183,63,0.78) 33%, rgba(255,254,0,0.78) 33%, rgba(15,235,27,0.78) 66%, rgba(71,255,251,0.78) 66%, rgba(34,8,174,0.78) 100%);'
+    background: 'url(https://agentseed.org/imgs/cherry-blossom.jpg)'
+  });
+    </script>
+</html>
