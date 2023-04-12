@@ -1,0 +1,205 @@
+body {
+    background-color: #111;
+}
+:root {
+    --accent: #6b1295;
+    --accent-dark: #560e77;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .font-title {
+    font-size: 4.1662rem;
+  }
+  .font-header {
+    font-size: 2.0831rem;
+  }
+  .font-normal {
+    font-size: 1.0831rem;
+  }
+  .hover-underline:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+  }
+  .hover-underline-white:hover {
+    text-decoration: underline;
+  }
+  #top-divider {
+    transform: translateY(-99%);
+  }
+  /* End general styles */
+  .primary-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    transition: background-color 0.5s;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: transparent;
+  }
+  .nitem {
+    transition: all 0.5s;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .container {
+    max-width: 120rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+  .navbar {
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    transition: height 0.25s;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 5rem;
+    margin-right: auto;
+  }
+  .nav-link {
+    transition: color 0.25s;
+  }
+  .button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 1.2rem;
+    transition: background-color 0.25s;
+  }
+  .button:hover {
+    box-shadow: 0px 0px 10px 0px var(--accent);
+  }
+  header.active {
+    background-color: #000;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  }
+  .active {
+    background-color: #000;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  }
+  header.active .navbar {
+    height: 7.5rem;
+  }
+  header.active .button:hover {
+    background-color: var(--accent);
+  }
+  
+  .navbar .dropdown-menu {
+    margin-top: 15px; /* Adjust this value to move the dropdown menu down */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 8px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .navbar .dropdown-item {
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+    transition: color 0.25s, background-color 0.25s;
+  }
+  
+  .navbar .dropdown-item:hover {
+    color: var(--accent);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 767px) {
+    .primary-header {
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+      background-color: #000;
+    }
+  
+    @media (max-width: 767px) {
+      .navbar-brand {
+        padding-left: 15px;
+      }
+    }
+  
+    .nitem {
+      background-color: #000;
+    }
+  }
+  
+  /* Hero Demo Content*/
+  .hero {
+    width: 100%;
+    height: 110vh;
+    backdrop-filter: brightness(60%);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: auto;
+    /* font-family: 'Orbitron', sans-serif; */
+    color: white;
+    background: url("https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #hero-title {
+    font-weight: 500;
+  }
+  #hero-content {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin-top: 50rem;
+    margin-left: 50%;
+  }
+  #hero-button {
+    font-family: "Poppins", sans-serif;
+    font-size: 14pt;
+    border: none;
+  }
+  /* .hero::after {
+      content: '';
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+    } */
+  .hero-text {
+    font-size: 14pt;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Hero end*/
+  
+  /* Removes navbar-toggler border */
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus,
+  .navbar-toggler,
+  .navbar-toggler-icon {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
