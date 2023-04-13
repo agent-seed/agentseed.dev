@@ -1,0 +1,6 @@
+:root {
+    --accent: #ff41c6;
+    --accent-dark: #b22d8a;
+    --blur: blur(20px);
+    --ti-cursor-color: var(--accent);
+  }

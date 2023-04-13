@@ -1,0 +1,29 @@
+@import url(vars.css);
+.panel {
+    padding: 15px;
+    display: block;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    min-height: 200px;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--panel-color);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.247);
+    transition: 0.5s;
+    -webkit-backdrop-filter: var(--blur) brightness(70%);
+    backdrop-filter: var(--blur) brightness(70%);
+    font-size: 16pt;
+    font-family: var(--font);
+    color: var(--font-color);
+    z-index: 1;
+    border-color: rgba(150, 150, 150, 0.25);
+}
+.panel:hover {
+    border: 1px solid var(--accent);
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.651);
+    backdrop-filter: var(--blur) brightness(50%);
+}
