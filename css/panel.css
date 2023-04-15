@@ -25,5 +25,6 @@
 .panel:hover {
     border: 1px solid var(--accent);
     box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.651);
+    -webkit-backdrop-filter: var(--blur) brightness(50%);
     backdrop-filter: var(--blur) brightness(50%);
 }
