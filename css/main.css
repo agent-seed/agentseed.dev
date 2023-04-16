@@ -1,14 +1,16 @@
 @import url(menu.css);
 @import url(panel.css);
 @import url(vars.css);
+/* @import url(blob.css); */
 body {
-    background-color: #111;
+  background-color: #111;
+  color: white;
 }
 .ten-vh-spacer {
   height: 10vh;
 }
 #hero-title {
-  transform: translateY(-100%);
+  transform: translateY(50vh);
 }
 h1 {
   font-size: 30pt;
@@ -21,4 +23,21 @@ h2 {
   padding: 1rem;
   border-radius: 10px;
   padding-right: 2.2rem;
+  font-family: monospace;
+  font-weight: bolder;
+}
+.accent {
+  background: linear-gradient(90deg, rgba(0,7,255,1) 0%, rgba(95,0,164,1) 35%, rgba(255,44,202,1) 100%);
+  -webkit-background: -webkit-linear-gradient(90deg, rgba(0,7,255,1) 0%, rgba(95,0,164,1) 35%, rgba(255,44,202,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero {
+  height: 120vh;
+}
+#wave {
+  bottom: -20vh;
+  position: absolute;
+  transform: translateY(1px);
 }
